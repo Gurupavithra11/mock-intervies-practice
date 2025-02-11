@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Interview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mock Interview</h1>
+    
+    <div id="company-selection">
+        <label>Select Company:</label>
+        <select id="company">
+            <option value="genpact">Genpact</option>
+            <option value="infosys">Infosys</option>
+        </select>
+        <button onclick="startInterview()">Start Interview</button>
+    </div>
+
+    <div id="interview-section" style="display: none;">
+        <h2 id="question">Loading question...</h2>
+        <button id="startBtn">Start Answering</button>
+        <button id="stopBtn" disabled>Stop Answering</button>
+        <button id="nextBtn">Next Question</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
